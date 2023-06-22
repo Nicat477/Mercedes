@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="img/favicon.png" sizes="192x192" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MERCEDES</title>
+</head>
+
+
+<body>
+
+    <!-- HEADER START -->
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav
+                        class="navbar navbar-expand-lg d-flex d-lg-block justify-content-between d-xl-flex navbar-light py-3 py-lg-0">
+                        <a class="navbar-brand" href="#">
+                            <img src="data:image/png;base64,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" alt="" id="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation" id="mobile-navbar-show">
+                            <span class="navbar-toggler-icon" style="font-size: 12px;"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                    <ul class="list-unstyled py-3">
+                                        <li class=""><a class="px-1" href="">Home 1</a></li>
+                                        <li class=""><a class="px-1" href="">Home 2</a></li>
+                                        <li class=""><a class="px-1" href="">Home 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pages</a>
+                                    <ul class="list-unstyled py-3">
+                                        <li class=""><a class="px-1" href="">Page 1</a></li>
+                                        <li class=""><a class="px-1" href="">Page 2</a></li>
+                                        <li class=""><a class="px-1" href="">Page 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item shop-li">
+                                    <a class="nav-link" href="#">Shop</a>
+                                    <div class="container">
+                                        <div class="row shop py-5">
+                                            <div class="col-lg-3">
+                                                <div class="item px-4">
+                                                    <h5>Product Types</h5>
+                                                    <ul class="list-unstyled py-3">
+                                                        <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                                                        <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                                                        <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="item px-4">
+                                                    <h5>Shop Pages</h5>
+                                                    <ul class="list-unstyled py-3">
+                                                        <li class=""><a class="px-3" href="">Shop Pages 1</a></li>
+                                                        <li class=""><a class="px-3" href="">Shop Pages 2</a></li>
+                                                        <li class=""><a class="px-3" href="">Shop Pages 3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="item px-4">
+                                                    <h5>Shop Types</h5>
+                                                    <ul class="list-unstyled py-3">
+                                                        <li class=""><a class="px-3" href="">Shop Types 1</a></li>
+                                                        <li class=""><a class="px-3" href="">Shop Types 2</a></li>
+                                                        <li class=""><a class="px-3" href="">Shop Types 3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="item px-4">
+                                                    <h5>Shop Layouts</h5>
+                                                    <ul class="list-unstyled py-3">
+                                                        <li class=""><a class="px-3" href="">Shop Layouts 1</a></li>
+                                                        <li class=""><a class="px-3" href="">Shop Layouts 2</a></li>
+                                                        <li class=""><a class="px-3" href="">Shop Layouts 3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                    <ul class="list-unstyled py-3">
+                                        <li class=""><a class="px-1" href="">Portfolio 1</a></li>
+                                        <li class=""><a class="px-1" href="">Portfolio 2</a></li>
+                                        <li class="">
+                                            <a class="px-1 mr-5" href="">Portfolio 3</a>
+                                            <i class="fas fa-chevron-right fa-sm"></i>
+                                            <ul class="list-unstyled py-3">
+                                                <li class=""><a class="px-3" href="">Shop Layouts 1</a></li>
+                                                <li class=""><a class="px-3" href="">Shop Layouts 2</a></li>
+                                                <li class=""><a class="px-3" href="">Shop Layouts 3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                    <ul class="list-unstyled py-3">
+                                        <li class=""><a class="px-1" href="">Blog 1</a></li>
+                                        <li class=""><a class="px-1" href="">Blog 2</a></li>
+                                        <li class="">
+                                            <a class="px-1 mr-5" href="">Blog 3</a>
+                                            <i class="fas fa-chevron-right fa-sm"></i>
+                                            <ul class="list-unstyled py-3">
+                                                <li class=""><a class="px-3" href="">Blog Layouts 1</a></li>
+                                                <li class=""><a class="px-3" href="">Blog Layouts 2</a></li>
+                                                <li class=""><a class="px-3" href="">Blog Layouts 3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Elements</a>
+                                    <ul class="list-unstyled py-3 elements">
+                                        <li class=""><a class="px-1" href="">Element 1</a></li>
+                                        <li class=""><a class="px-1" href="">Element 2</a></li>
+                                        <li class="element">
+                                            <i class="fas fa-chevron-right fa-sm mr-5"></i>
+                                            <a class="px-1" href="">Element 3</a>
+                                            <ul class="list-unstyled py-3">
+                                                <li class=""><a class="px-3" href="">Element 1</a></li>
+                                                <li class=""><a class="px-3" href="">Element 2</a></li>
+                                                <li class=""><a class="px-3" href="">Element 3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item my-auto search">
+                                    <i class="fas fa-search" id="search"></i>
+                                    <ul class="list-unstyled py-3">
+                                        <li class="d-flex px-3">
+                                            <input id="input-search" type="text" placeholder="Search">
+                                            <i class="fas fa-search my-auto" id="search"></i>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item my-auto shop-cart">
+                                    <i class="fas fa-shopping-bag" id="log"></i>
+                                    
+                                    <span>CART ($0)</span>
+                                    <ul class="list-unstyled py-3">
+                                        <li class="warn">No products in the cart.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-navbar position-absolute shadow-lg h-100 p-5">
+                <i class="fas fa-times fa-lg" id="mobile-navbar-close"></i>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home <i class="fas fa-caret-right fa-sm"></i></a></li>
+                    <ul class="list-unstyled">
+                        <li class=""><a class="px-1" href="">Home 1</a></li>
+                        <li class=""><a class="px-1" href="">Home 2</a></li>
+                        <li class=""><a class="px-1" href="">Home 3</a></li>
+                    </ul>
+                    <li><a href="#">Pages <i class="fas fa-caret-right fa-sm"></i></a></li>
+                    <ul class="list-unstyled">
+                        <li class=""><a class="px-1" href="">Page 1</a></li>
+                        <li class=""><a class="px-1" href="">Page 2</a></li>
+                        <li class=""><a class="px-1" href="">Page 3</a></li>
+                    </ul>
+                    <li><a href="#">Shop <i class="fas fa-caret-right fa-sm"></i></a></a></li>
+                    <ul class="list-unstyled py-3">
+                        <li class=""><a class="px-3" href="#">PRODUCT TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP PAGES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                    </ul>
+                    <li><a href="#">Portfolio <i class="fas fa-caret-right fa-sm"></i></a></a></li>
+                    <ul class="list-unstyled py-3">
+                        <li class=""><a class="px-3" href="#">PRODUCT TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP PAGES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                    </ul>
+                    <li><a href="#">Blog <i class="fas fa-caret-right fa-sm"></i></a></a></li>
+                    <ul class="list-unstyled py-3">
+                        <li class=""><a class="px-3" href="#">PRODUCT TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP PAGES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                    </ul>
+                    <li><a href="#">Elements <i class="fas fa-caret-right fa-sm"></i></a></a></li>
+                    <ul class="list-unstyled py-3">
+                        <li class=""><a class="px-3" href="#">PRODUCT TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP PAGES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                        <li class=""><a class="px-3" href="#">SHOP TYPES <i class="fas fa-caret-right fa-sm"></i></a>
+                        </li>
+                        <ul class="list-unstyled py-3">
+                            <li class=""><a class="px-3" href="">Product Types 1</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 2</a></li>
+                            <li class=""><a class="px-3" href="">Product Types 3</a></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+
+    <main>
+
+        <!-- SLIDER START -->
+
+        <section id="slider">
+            <div class="owl-carousel slider">
+                <div> <img src="https://www.mercedes-benz.com.az/content/dam/cee/retailer/retail-azerbaijan/azerbaijan/2020/glsmaybach1.jpg.asset.wMF4Lzu0Ih0rG5ao5SX9UDAq4qEPQ3TSwDAcPQomZI4.jpg" style="width: 385px;"> </div>
+                <div> <img src="https://www.mercedes-benz.com.az/content/dam/cee/retailer/retail-azerbaijan/azerbaijan/2020/e-class/coupe/kupe1.jpg.asset.CUptudDlDqwId92NHjdqge2DW_rFZvoxtKwgmLS8-s0.jpg" style="width: 385px;"> </div>
+               <div><img src="https://www.mercedes-benz.com.az/content/dam/cee/reference/Passenger-Cars/Product-Assets/b-class/new%20b-class/new-b-class-2-715x230.jpg.asset.MeTl3v4j-QbduwN7KXSlpor_O_RgX8B6GYlSlqUAJoU.jpg" style="width: 385px;"></div>
+            </div> 
+            <div class="container context pl-lg-5 ml-lg-3">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="text">
+                            <h1>Biz <span>ailə avtomobilini</span> </h1>
+                            <h1> yenidən icad etdik</h1>
+                            <p class="text-chartreuse-50 d-none d-sm-block">Yeni B-Klass burada. Əvvəlkindən daha dinamik<br> rahat və etibarlı. </p>
+                            <p class="extra">Heyranedici ölçülü ailə avtomobili.</p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- SLIDER END -->
+
+        <!-- PRODUCTS START -->
+
+        <section id="products">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-12 d-flex justify-content-between">
+                        <ul class="category-mobile d-md-none list-unstyled">
+                            <li>
+                                <a href="" class="categories mr-2">Categories</a>
+                                <i class="fas fa-caret-down"></i>
+                                <ul class="category list-unstyled" style="display: none;">
+                                    <li><a href="" data-id="all">All</a></li>
+                                    <li><a href="" data-id="popular">Popular</a></li>
+                                    <li><a href="" data-id="winter">A-Class</a></li>
+                                    <li><a href="" data-id="various">B-Class</a></li>
+                                    <li><a href="" data-id="exotic">C-Class</a></li>
+                                    <li><a href="" data-id="green">E-Class</a></li>
+                                    <li><a href="" data-id="cactuse">G-Class</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="category d-none d-md-flex list-unstyled">
+                            <li><a href="" data-id="all">All</a></li>
+                            <li><a href="" data-id="popular">Popular</a></li>
+                            <li><a href="" data-id="winter">A-Class</a></li>
+                            <li><a href="" data-id="various">B-Class</a></li>
+                            <li><a href="" data-id="exotic">C-Class</a></li>
+                            <li><a href="" data-id="green">E-Class</a></li>
+                            <li><a href="" data-id="cactuse">G-Class</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="" class="mr-2">Filter</a>
+                                <i class="fas fa-caret-down"></i>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="popular">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/fc66bb1999b8f70a201a01e454d94223/glb.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>GLB</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$259123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="popular">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/a301096e5769fbe3974500fbfe4795a0/c_cab.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>C-Class Cabriolet</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$234987</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="winter">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/6f2b6aef35647d4f3259a4187decd2b1/e_cab.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>E-Class Cabriolet</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$250900</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="winter">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/ce58d6976ab0684d45e740826721d07f/sl.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>SL Roadster</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$198564</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="various">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/b5edcd16c2314a53124d96e2db1e952d/cla.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>CLA</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$201232</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="various">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/3d0eb4e0b4f7d677c8dee6ff36e950fe/eclasscoupe.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>E-Class Coupé</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$245001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="exotic">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/148c9dccea1cfaaaf6709a5e11db120a/cclasssedan.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>C-Class</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$189678</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="exotic">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_390,h_260,q_auto,c_fill,f_auto,fl_lossy/auto-client/7b598075d0e60e26abd2657d7c4ea091/eclasssedan.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>E-Class</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">Add to cart</span>
+                                <span class="text-black-50">$210987</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS END -->
+
+        <!-- ABOUT START -->
+
+       
+
+        
+
+        
+
+        
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e5e249fce2.js" crossorigin="anonymous"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
